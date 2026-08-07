@@ -1,0 +1,54 @@
+.sidebar{
+    padding: 1vh;
+    background-color: var(--navbar-bg);
+    padding: 4.5vh;
+    width: 13%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center ;
+}
+
+.nav-container{
+    position: inherit;
+}
+
+.nav-profile{
+    border-radius: 100%;
+    border:solid rgb(63, 63, 63)  8px;
+    margin-bottom: -1vh;
+    
+}
+
+a{
+    text-decoration: none;
+}
+.navbar-nav{
+    display: flex;
+    flex-direction: column;
+    list-style-type:none;
+    gap: 1.2em;
+    align-items: center;
+    padding: 4vh;
+}
+
+.name{
+    color:var(--primary-color);
+    font-size: 22px;
+    font-weight: 500;
+    
+}
+
+.nav-link{
+    color: var(--primary-color);
+    font-weight: 300;
+}
+
+.nav-link:hover{
+    color:var(--hover-color) ;
+}
+
+.nav-link:active{
+    color: var(--hover-color);
+}
