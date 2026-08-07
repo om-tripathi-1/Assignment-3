@@ -1,0 +1,131 @@
+.services {
+    background-color: #F8F9FA;
+    min-height: 100vh;
+    padding: 5rem 0;
+}
+
+.services-heading {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+
+.services-heading h2 {
+    width: 100%;
+    color: var(--transparent-heading-color);
+    font-size: clamp(4rem, 10vw, 8rem);
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+}
+
+
+.services-heading p {
+    position: absolute;
+    width: 100%;
+    color: black;
+    font-size: clamp(1.75rem, 3vw, 2.2rem);
+    font-weight: 600;
+    text-align: center;
+}
+
+.services-container {
+    width: 90%;
+    max-width: 70rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    row-gap: 3rem;
+}
+
+.service-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    margin-left: 0;
+}
+
+.service-icon {
+    flex-shrink: 0;
+    width: 4rem;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.1);
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+}
+
+.service-content {
+    flex: 1;
+    color: black;
+}
+
+
+.service-content h3 {
+    margin: 0 0 0.6rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+
+.service-content p {
+    margin: 0;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+
+    .services {
+        min-height: auto;
+
+        padding: 4rem 0;
+    }
+
+    .services-heading {
+        margin-bottom: 3rem;
+    }
+
+    .services-heading h2 {
+        font-size: clamp(3.5rem, 18vw, 6rem);
+    }
+
+    .services-heading p {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+    }
+
+    .services-container {
+        width: 90%;
+
+        grid-template-columns: 1fr;
+
+        row-gap: 2.5rem;
+    }
+
+    .service-card {
+        gap: 1rem;
+    }
+
+    .service-icon {
+        width: 3.75rem;
+
+        font-size: 1.25rem;
+    }
+
+    .service-content h3 {
+        font-size: 1.15rem;
+    }
+
+    .service-content p {
+        font-size: 0.95rem;
+    }
+}

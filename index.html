@@ -1,64 +1,618 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/base.css">
-    <link rel="stylesheet" href="CSS/variables.css">
-    <link rel="stylesheet" href="CSS/navbar.css">
-    <link rel="stylesheet" href="CSS/hero.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/base.css" />
+    <link rel="stylesheet" href="CSS/variables.css" />
+    <link rel="stylesheet" href="CSS/navbar.css" />
+    <link rel="stylesheet" href="CSS/hero.css" />
+    <link rel="stylesheet" href="CSS/about.css">
+    <link rel="stylesheet" href="CSS/services.css">
+    <link rel="stylesheet" href="CSS/summary.css">
+    <link rel="stylesheet" href="CSS/portfolio.css">
 </head>
+
 <body>
     <div class="main-wrapper">
-        <header class="header">
-            <nav class="sidebar">
-                <div class="nav-container">
-                    <a href="index.html">
-                        <span>
-                            <img src="assets/profile.jpg" class="nav-profile" alt="profile-pic">
-                        </span>
-                        <h1 class="name">Simone Olivia</h1>
-                    </a>
-                    <div class="header-nav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="" class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link">About Me</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link">What I Do</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link">Resume</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link">Testemonial</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
+        <aside class="header">
 
-        <div class="content">
+            <nav class="sidebar">
+
+                <div class="nav-container">
+                    <a href="index.html" class="logo">
+                        <span class="profile-container">
+                            <img src="assets/profile.jpg" class="profile-image" alt="Profile picture">
+                        </span>
+
+                        <h1>Simone Olivia</h1>
+                    </a>
+                </div>
+
+                <input type="checkbox" id="menu-toggle">
+
+                <label for="menu-toggle" class="menu-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <div class="navigation">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About Me</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link">What I Do</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#resume" class="nav-link">Resume</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#portfolio" class="nav-link">Portfolio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#testimonial" class="nav-link">Testimonial</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+
+        </aside>
+
+        <main class="content">
             <section class="home">
                 <div class="hero-bg">
                     <img src="assets/hero-image.jpg" alt="hero-image">
                 </div>
+                <div class="hero-text">
+                    <h3>Welcome</h3>
+                    <h2>I'm Simone Olivia</h2>
+                    <p>based in Los Angeles, California</p>
+                    <button class="cta-button">
+                        Hire me
+                    </button>
+                </div>
             </section>
-        </div>
+            <section class="about">
+                <div class="about-heading">
+                    <h2>ABOUT ME</h2>
+                    <p>
+                        Know me more
+                        <span class="heading-separator-line"></span>
+                    </p>
+                </div>
+                <div class="about-content">
+
+                    <div class="about-description">
+                        <h2>
+                            I'm <span>Simone Olivia,</span> a Web Developer
+                        </h2>
+
+                        <p>
+                            I help you build brand for your business at an affordable price.
+                            Thousands of clients have procured exceptional results while
+                            working with our dedicated team. When an unknown printer took
+                            a galley of type and scrambled it to make a type specimen book.
+                        </p>
+
+                        <p>
+                            Delivering work within time and budget which meets client's
+                            requirements is our motto. Lorem Ipsum has been the industry's
+                            standard dummy text ever when an unknown printer took a galley.
+                        </p>
+                    </div>
+
+                    <div class="about-details">
+
+                        <ul>
+                            <li>
+                                <strong>Name:</strong>
+                                Simone Olivia
+                            </li>
+
+                            <li>
+                                <strong>Email:</strong>
+                                <a href="mailto:#">chat@simone.com</a>
+                            </li>
+
+                            <li>
+                                <strong>Age:</strong>
+                                28
+                            </li>
+
+                            <li>
+                                <strong>From:</strong>
+                                Los Angeles, California
+                            </li>
+                        </ul>
+
+                        <a href="#" class="download-btn">Download CV</a>
+
+                    </div>
+
+                </div>
+                <div class="stats-section">
+                    <div class="stats-grid">
+
+                        <div class="stat-box">
+                            <h4><span>10</span>+</h4>
+                            <p>Years Experience</p>
+                        </div>
+
+                        <div class="stat-box">
+                            <h4><span>250</span>+</h4>
+                            <p>Happy Clients</p>
+                        </div>
+
+                        <div class="stat-box">
+                            <h4><span>650</span>+</h4>
+                            <p>Projects Done</p>
+                        </div>
+
+                        <div class="stat-box">
+                            <h4><span>38</span></h4>
+                            <p>Get Awards</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="services">
+                <div class="services-heading">
+                    <h2>SERVICES</h2>
+                    <p>
+                        What I Do?
+                        <span class="heading-separator-line"></span>
+                    </p>
+                </div>
+                <div class="services-container">
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                        </div>
+
+                        <div class="service-content">
+                            <h3>Graphic Design</h3>
+                            <p>
+                                Lisque persius interesset his et, in quot quidam
+                                persequeris vim, ad mea essent possim iriure.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                        </div>
+
+                        <div class="service-content">
+                            <h3>Web Design</h3>
+                            <p>
+                                Lisque persius interesset his et, in quot quidam
+                                persequeris vim, ad mea essent possim iriure.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                        </div>
+
+                        <div class="service-content">
+                            <h3>UI/UX Design</h3>
+                            <p>
+                                Lisque persius interesset his et, in quot quidam
+                                persequeris vim, ad mea essent possim iriure.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                        </div>
+
+                        <div class="service-content">
+                            <h3>App Design & Develop</h3>
+                            <p>
+                                Lisque persius interesset his et, in quot quidam
+                                persequeris vim, ad mea essent possim iriure.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                        </div>
+
+                        <div class="service-content">
+                            <h3>Business Analysis</h3>
+                            <p>
+                                Lisque persius interesset his et, in quot quidam
+                                persequeris vim, ad mea essent possim iriure.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                        </div>
+
+                        <div class="service-content">
+                            <h3>SEO Marketing</h3>
+                            <p>
+                                Lisque persius interesset his et, in quot quidam
+                                persequeris vim, ad mea essent possim iriure.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="summary">
+                <div class="summary-heading">
+                    <h2>SUMMARY</h2>
+                    <p>
+                        Resume
+                        <span class="heading-separator-line"></span>
+                    </p>
+                </div>
+                <div class="resume-grid">
+                    <div class="experience-section">
+
+                        <h2>My Education</h2>
+
+                        <div class="experience-card">
+                            <p class="experience-date">2000 - 2004</p>
+
+                            <h3>Computer Science</h3>
+
+                            <p class="experience-company">International University</p>
+
+                            <p class="experience-description">
+                                Lisque persius interesset his et, in quot quidam
+                                persequeris vim, ad mea essent possim iriure.
+                            </p>
+                        </div>
+
+
+                        <div class="experience-card">
+                            <p class="experience-date">2005 - 2008</p>
+
+                            <h3>Bachelor Degree</h3>
+
+                            <p class="experience-company">University of California</p>
+
+                            <p class="experience-description">
+                                Lisque persius interesset his et, in quot quidam
+                                persequeris vim, ad mea essent possim iriure.
+                            </p>
+                        </div>
+
+
+                        <div class="experience-card">
+                            <p class="experience-date">2009 - 2012</p>
+
+                            <h3>Master Degree</h3>
+
+                            <p class="experience-company">Harvard University</p>
+
+                            <p class="experience-description">
+                                Lisque persius interesset his et, in quot quidam
+                                persequeris vim, ad mea essent possim iriure.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="experience-section">
+
+                        <h2>My Experience</h2>
+
+                        <div class="experience-card">
+                            <p class="experience-date">2012 - 2013</p>
+
+                            <h3>Jr. UI UX Designer</h3>
+
+                            <p class="experience-company">Themeforest</p>
+
+                            <p class="experience-description">
+                                Lisque persius interesset his et, in quot quidam
+                                persequeris vim, ad mea essent possim iriure.
+                            </p>
+                        </div>
+
+
+                        <div class="experience-card">
+                            <p class="experience-date">2014 - 2016</p>
+
+                            <h3>Jr. Product Designer</h3>
+
+                            <p class="experience-company">Dribbble</p>
+
+                            <p class="experience-description">
+                                Lisque persius interesset his et, in quot quidam
+                                persequeris vim, ad mea essent possim iriure.
+                            </p>
+                        </div>
+
+
+                        <div class="experience-card">
+                            <p class="experience-date">2017 - 2019</p>
+
+                            <h3>Product Designer</h3>
+
+                            <p class="experience-company">Adobe</p>
+
+                            <p class="experience-description">
+                                Lisque persius interesset his et, in quot quidam
+                                persequeris vim, ad mea essent possim iriure.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="skills-heading">My Skills</h2>
+                <div class="skills-grid">
+
+                    <div class="skills-column">
+
+                        <div class="skill">
+                            <div class="skill-header">
+                                <span>Web Design</span>
+                                <span>65%</span>
+                            </div>
+
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 65%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-header">
+                                <span>HTML/CSS</span>
+                                <span>95%</span>
+                            </div>
+
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 95%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-header">
+                                <span>JavaScript</span>
+                                <span>80%</span>
+                            </div>
+
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="skills-column">
+
+                        <div class="skill">
+                            <div class="skill-header">
+                                <span>React JS</span>
+                                <span>70%</span>
+                            </div>
+
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 70%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-header">
+                                <span>Angular Js</span>
+                                <span>60%</span>
+                            </div>
+
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 60%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-header">
+                                <span>Bootstrap</span>
+                                <span>99%</span>
+                            </div>
+
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 99%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="skills-cta">
+                    <a href="#" class="download-cv">Download CV</a>
+                </div>
+            </section>
+            <section class="portfolio">
+                <div class="portfolio-heading">
+                    <h2>PORTFOLIO</h2>
+                    <p>
+                        My Work
+                        <span class="heading-separator-line"></span>
+                    </p>
+                </div>
+                <nav class="portfolio-menu">
+                    <a href="#" class="portfolio-link active">All</a>
+                    <a href="#" class="portfolio-link">Design</a>
+                    <a href="#" class="portfolio-link">Brand</a>
+                    <a href="#" class="portfolio-link">Photos</a>
+                </nav>
+                <div class="portfolio-grid">
+
+                    <div class="portfolio-item brand">
+                        <div class="portfolio-box">
+
+                            <div class="portfolio-image">
+                                <img src="assets/my-work-1.jpg" alt="Project 1">
+
+                                <div class="portfolio-overlay">
+                                    <a href=""></a>
+
+                                    <div class="portfolio-details">
+                                        <h5>Project Title</h5>
+                                        <span>Category</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="portfolio-item design">
+                        <div class="portfolio-box">
+
+                            <div class="portfolio-image">
+                                <img src="assets/my-work-2.jpg" alt="Project 2">
+
+                                <div class="portfolio-overlay">
+                                    <a href=""></a>
+
+                                    <div class="portfolio-details">
+                                        <h5>Project Title</h5>
+                                        <span>Category</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="portfolio-item photos">
+                        <div class="portfolio-box">
+
+                            <div class="portfolio-image">
+                                <img src="assets/my-work-3.jpg" alt="Project 3">
+
+                                <div class="portfolio-overlay">
+                                    <a href=""></a>
+
+                                    <div class="portfolio-details">
+                                        <h5>Project Title</h5>
+                                        <span>Category</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="portfolio-item brand photos">
+                        <div class="portfolio-box">
+
+                            <div class="portfolio-image">
+                                <img src="assets/my-work-4.jpg" alt="Project 4">
+
+                                <div class="portfolio-overlay">
+                                    <a href=""></a>
+
+                                    <div class="portfolio-details">
+                                        <h5>Project Title</h5>
+                                        <span>Category</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="portfolio-item design">
+                        <div class="portfolio-box">
+
+                            <div class="portfolio-image">
+                                <img src="assets/my-work-5.jpg" alt="Project 5">
+
+                                <div class="portfolio-overlay">
+                                    <a href=""></a>
+
+                                    <div class="portfolio-details">
+                                        <h5>Project Title</h5>
+                                        <span>Category</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="portfolio-item brand">
+                        <div class="portfolio-box">
+
+                            <div class="portfolio-image">
+                                <img src="assets/my-work-6.jpg" alt="Project 6">
+
+                                <div class="portfolio-overlay">
+                                    <a href=""></a>
+
+                                    <div class="portfolio-details">
+                                        <h5>Project Title</h5>
+                                        <span>Category</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="portfolio-item design photos">
+                        <div class="portfolio-box">
+
+                            <div class="portfolio-image">
+                                <img src="assets/my-work-7.jpg" alt="Project 7">
+
+                                <div class="portfolio-overlay">
+                                    <a href=""></a>
+
+                                    <div class="portfolio-details">
+                                        <h5>Project Title</h5>
+                                        <span>Category</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
     </div>
 </body>
+
 </html>

@@ -1,0 +1,251 @@
+.summary {
+    background-color: #fff;
+    min-height: 100vh;
+    padding: 5%;
+}
+
+.summary-heading {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.summary-heading h2 {
+    width: 100%;
+    color: var(--transparent-heading-color);
+    font-size: clamp(4rem, 10vw, 8rem);
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+}
+
+.summary-heading p {
+    position: absolute;
+    width: 100%;
+    color: black;
+    font-size: clamp(1.75rem, 3vw, 2.2rem);
+    font-weight: 600;
+    text-align: center;
+}
+
+.resume-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    width: 90%;
+    max-width: 75rem;
+    margin: 4rem auto 0;
+}
+
+.experience-section {
+    color: black;
+    width: 100%;
+}
+
+.experience-section > h2 {
+    margin: 0 0 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.experience-card {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.experience-date {
+    display: inline-block;
+    margin: 0 0 1rem;
+    padding: 0.25rem 0.5rem;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.experience-card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.experience-company {
+    margin: 0 0 0.75rem;
+    color: #dc3545;
+}
+
+.experience-description {
+    margin: 0;
+    line-height: 1.7;
+}
+
+.skills-heading {
+    color: black;
+    width: 90%;
+    max-width: 75rem;
+    margin: 2rem auto 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    width: 90%;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.skill {
+    margin-bottom: 1.5rem;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #212529;
+}
+
+.progress {
+    width: 100%;
+    height: 0.5rem;
+    background-color: #e9ecef;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+}
+
+.skills-cta {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.download-cv {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #6c757d;
+    border-radius: 50rem;
+    color: #6c757d;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.download-cv:hover {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.download-icon {
+    display: inline-flex;
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+
+    .resume-grid {
+        gap: 2rem;
+        width: 92%;
+    }
+
+    .skills-grid {
+        gap: 2rem;
+        width: 92%;
+    }
+
+    .skills-heading {
+        width: 92%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .summary {
+        min-height: auto;
+    }
+
+    .summary-heading {
+        padding-top: 4rem;
+        margin-bottom: 3rem;
+    }
+
+    .summary-heading h2 {
+        font-size: clamp(3.5rem, 18vw, 5rem);
+    }
+
+    .summary-heading p {
+        font-size: clamp(1.4rem, 7vw, 2rem);
+        white-space: nowrap;
+    }
+
+    .resume-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        width: 88%;
+        margin-top: 0;
+    }
+
+    .experience-section {
+        width: 100%;
+    }
+
+    .experience-section > h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .experience-card {
+        padding: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .experience-card h3 {
+        font-size: 1.15rem;
+    }
+
+    .experience-description {
+        font-size: 0.95rem;
+    }
+
+    .skills-heading {
+        width: 88%;
+        margin: 2rem auto 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+        width: 88%;
+    }
+
+    .skill {
+        margin-bottom: 1.25rem;
+    }
+
+    .skills-cta {
+        margin: 2rem 0 3rem;
+    }
+
+}

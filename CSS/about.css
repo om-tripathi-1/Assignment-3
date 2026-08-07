@@ -1,0 +1,166 @@
+.about {
+    min-height: 100vh;
+    background-color: #ffffff;
+    padding: 5rem 5%;
+}
+
+.about-heading {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.about-heading h2 {
+    width: 100%;
+    margin: 0;
+    color: var(--transparent-heading-color);
+    font-size: clamp(4rem, 10vw, 8rem);
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+}
+
+.about-heading p {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    color: black;
+    font-size: clamp(1.75rem, 3vw, 2.2rem);
+    font-weight: 600;
+    text-align: center;
+}
+
+.heading-separator-line {
+    display: block;
+    width: 5rem;
+    height: 0.2rem;
+    margin: 0.75rem auto 0;
+    background-color: var(--secondary-color);
+}
+
+.about-content {
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.about-description {
+    width: 65%;
+    color: black;
+    margin-left: 0;
+}
+
+.about-description h2 {
+    margin: 0 0 1rem;
+    font-size: clamp(1.4rem, 2vw, 1.75rem);
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.about-description h2 span {
+    color: var(--secondary-color);
+}
+
+.about-description p {
+    margin: 0 0 1rem;
+    line-height: 1.7;
+}
+
+.about-details {
+    width: 35%;
+    padding-left: 1.5rem;
+    color: black;
+}
+
+.about-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+}
+
+.about-details li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.about-details strong {
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+.about-details a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 0.75rem 1.6rem;
+    background-color: var(--secondary-color);
+    color: white !important;
+    text-decoration: none;
+    border-radius: 50rem;
+    box-shadow: 0.1rem 0.4rem 0.7rem rgb(194, 194, 194);
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #167f61;
+}
+
+.stats-section {
+    margin-top: 3rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+}
+
+.stat-box {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-right: 1px solid #ddd;
+}
+
+.stat-box:last-child {
+    border-right: none;
+}
+
+.stat-box h4 {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 500;
+    color: #6c757d;
+    line-height: 1.2;
+}
+
+.stat-box p {
+    margin: 0.3rem 0 0;
+    color: black;
+    font-size: 1rem;
+}
+
+@media (max-width: 992px) {
+
+    .about {
+        padding: 4rem 4%;
+    }
+
+    .about-content {
+        gap: 2rem;
+    }
+
+    .about-description {
+        width: 60%;
+    }
+
+    .about-details {
+        width: 40%;
+    }
+}

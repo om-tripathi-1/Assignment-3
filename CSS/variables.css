@@ -3,5 +3,7 @@
     --font-primary: 'Poppins', sans-serif;
     --font-heading: 'Montserrat', sans-serif;
     --primary-color: #fff;
-    --hover-color: #20C990;
+    --hover-color: rgb(0, 162, 130);
+    --secondary-color: rgb(0, 162, 130);
+    --transparent-heading-color: #EEF0F1;
 }
